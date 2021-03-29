@@ -2,7 +2,7 @@ package com.correvate.exercise.zipper.model;
 
 public enum Error {
     ZIP_CREATION_EXCEPTION("An error occurred generating zip File"),
-    VALIDATION_ERROR_EMPTY_LIST("Input file list Empty"),
+    VALIDATION_ERROR_EMPTY_LIST("The list in input is empty"),
     LIMIT_SIZE_EXCEEDED_ERROR("The size of the files sent exceeds the limit."),
     GENERIC_ERROR("An Error occurred in transaction");
 
