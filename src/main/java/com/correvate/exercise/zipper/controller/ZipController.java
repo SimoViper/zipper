@@ -17,8 +17,8 @@ import static com.correvate.exercise.zipper.validation.RequestValidator.validReq
 @RestController("/files")
 public class ZipController {
 
-    private static final String REQUEST_RECEIVED = "Zip Request received for ";
-    private static final String FILES = " files";
+    private static final String REQUEST_RECEIVED = "Zip Request received";
+
 
     private final ZipService zipService;
 
@@ -28,7 +28,7 @@ public class ZipController {
 
     @PostMapping(path = "/zip", produces="application/zip")
     public  byte[] zip(@RequestParam("files") List<MultipartFile> files) throws IOException, ValidationException {
-        log.info(REQUEST_RECEIVED + files.size() + FILES);
+        log.info(REQUEST_RECEIVED);
             validRequest(files);
             return zipService.zipFiles(files);
     }
