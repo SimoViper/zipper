@@ -8,7 +8,7 @@ http://localhost:8080/zip
 
 the **body** content type is form-data and has to contain the list of files.
 
-A **postman** collection with a request to the service to test the service manually
+A **postman** collection with a request to test the service manually
 is provided in the root of the project, in order to download the zip file is necessary to open the 
 combo box near the button "Send" and select "Send and Download".
 
